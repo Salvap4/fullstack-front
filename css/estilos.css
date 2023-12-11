@@ -1,0 +1,36 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logotipo{
+    vertical-align: middle;
+}
+
+.titulo_principal{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div{
+    margin: 2px;
+}
+
+.form{
+    display: block;
+}
+
+.group{
+    display: inline-block;
+}
+
+#alertas{
+    color: red;
+}
+
+.datos_cliente{
+    background-color: #55ccff;
+}
+
+.datos_pedido{
+    background-color: #40ccbb;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas Full Stack</title>
+
+    <link rel="stylesheet" href="/css/estilos.css" type="text/css">
+    <script src="/js/jquery-3.7.1.min.js"></script>
+
+    
+</head>
+<!-- <body onload="manejaDOM();"> -->
+    
+    <!-- - - - - - - - IMAGEN LOGOTIPO Y TÍTULO PRINCIPAL - - - - - - - -->
+    <div>
+        <img class="logotipo" style="height: 60px;" src="/images/descarga.jpg" alt="Logotipo pizza">
+        <h1 class="titulo_principal">Pizzas Full Stack</h1>
+    </div>
+    
+    <div id="alertas"></div>
+    <form id="formulario01" method="POST" action="http://localhost:5000/pizza">
+    <!-- <form id="formulario01" method="POST" action="http://localhost/solicita_pedido.html"> -->
+        
+        <!-- - - - - - - - DATOS DEL CLIENTE - - - - - - - -->
+        <div class="datos_cliente">
+            <h2>Datos del cliente</h2>
+            
+            <div class="form">
+                <div class="group">
+                    <label id="label_nombre" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+            </div>
+            
+            <div class="form">
+                <div class="group">
+                    <label id="label_apellidos" for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos">
+                </div>
+            </div>
+            
+            <div class="form">
+                <div class="group">
+                    <label for="nacimiento">Fecha de nacimiento</label>
+                    <input type="date" name="nacimiento" id="nacimiento">
+                </div>
+            </div>
+            
+            <div class="form">
+                <div class="group">
+                    <label for="direccion">Dirección postal</label>
+                    <textarea name="direccion" id="direccion" cols="180%" rows="4"></textarea>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- - - - - - - - DATOS DEL PEDIDO - - - - - - - -->
+        <div class="datos_pedido">
+            <h2>Datos del pedido</h2>
+            
+            <div class="form">
+                <div class="group">
+                    <label for="tamaño">Tamaño de la pizza</label>
+                    <select name="tamaño" id="tamaño">
+                        <option id="pequeña">Pequeña</option>
+                        <option id="mediana">Mediana</option>
+                        <option id="grande">Grande</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div  class="form">
+                <div class="group">
+                    <p>Marcar los ingredientes deseados: </p>
+                </div>
+            </div>
+
+            <div  class="form">
+                <div class="group">
+                    <label for="i1">Jamón York</label>
+                    <input type="checkbox" name="i1" id="i1"><br>
+                </div>
+            </div>
+
+            <div  class="form">
+                <div class="group">
+                    <label for="i2">Champiñones</label>
+                    <input type="checkbox" name="i2" id="i2"><br>
+                </div>
+            </div>
+
+            <div  class="form">
+                <div class="group">
+                    <label for="i3">Pepperoni</label>
+                    <input type="checkbox" name="i3" id="i3"><br>
+                </div>
+            </div>
+
+            <div  class="form">
+                <div class="group">
+                    <label for="i4">Aceitunas</label>
+                    <input type="checkbox" name="i4" id="i4"><br>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="form">
+            <div class="group">
+                <button type="reset">Limpiar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+
+    </form>
+    
+    <!-- <script src="/js/script.js"></script> -->
+    <script src="/js/script_jquery.js"></script>
+</body>
+</html>
