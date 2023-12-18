@@ -28,5 +28,21 @@ $(function() {
     }
 
     Comprobar_campos();
+
     
+    $("#tamano").on('change', function() {
+        console.log(this.value);
+        tamano = this.value;
+        
+        // Realizar la solicitud AJAX
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:5000/checksize",
+            data: { size: tamano },
+            success: function(response) {
+                $('#resultado_tamano').text(response);
+            }, 
+        });
+    });
+
 });
