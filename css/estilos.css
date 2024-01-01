@@ -1,36 +1,47 @@
-*{
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.logotipo{
+.logotipo {
     vertical-align: middle;
 }
 
-.titulo_principal{
+.titulo_principal {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 10px; /* Añade margen izquierdo para separar del logotipo */
 }
 
-div{
-    margin: 2px;
+body {
+    margin: 0; /* Elimina márgenes predeterminados del cuerpo */
 }
 
-.form{
+div {
+    margin: 10px;
+}
+
+.form {
     display: block;
+    margin-bottom: 15px; /* Añade margen inferior para separar los bloques del formulario */
 }
 
-.group{
+.group {
     display: inline-block;
+    margin-right: 10px; /* Añade margen derecho para separar los elementos del grupo */
 }
 
-#alertas{
+#alertas {
     color: red;
 }
 
-.datos_cliente{
+.datos_cliente {
     background-color: #55ccff;
+    padding: 10px; /* Añade relleno para separar el contenido del borde */
+    margin-bottom: 15px; /* Añade margen inferior para separar de la siguiente sección */
 }
 
-.datos_pedido{
+.datos_pedido {
     background-color: #40ccbb;
+    padding: 10px; /* Añade relleno para separar el contenido del borde */
+    margin-bottom: 15px; /* Añade margen inferior para separar de la siguiente sección */
 }

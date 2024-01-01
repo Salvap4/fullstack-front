@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Cambia el color de fondo según tu preferencia */
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logotipo {
+    height: 60px;
+    vertical-align: middle;
+}
+
+.titulo_principal {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    color: #333; /* Cambia el color del texto según tu preferencia */
+}
+
+#alertas {
+    color: red;
+}
+
+.datos_cliente,
+.datos_pedido {
+    background-color: #fff; /* Fondo blanco para las secciones */
+    border: 1px solid #ddd; /* Borde delgado */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form {
+    margin-bottom: 15px;
+}
+
+.group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="reset"] {
+    background-color: #f44336; /* Color de fondo del botón de reset */
+}
+
+/* Agrega estilos adicionales según sea necesario */
+
+/* Haz que los checkbox y el botón de submit estén alineados verticalmente */
+input[type="checkbox"],
+button[type="submit"] {
+    vertical-align: middle;
+}
